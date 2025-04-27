@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- TextView for Label 1 -->
+    <TextView
+        android:id="@+id/tv_label_first_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angka pertama:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText for Input 1 -->
+
+    <!-- TextView for Label 2 -->
+    <EditText
+        android:id="@+id/edt_first_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv_label_second_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angka Kedua:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- EditText for Input 2 -->
+    <EditText
+        android:id="@+id/edt_second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan angka kedua"/>
+
+    <!-- TextView for Result -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil = "
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"/>
+
+    <!-- Operation Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginStart="16dp"/>
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:layout_marginStart="16dp"/>
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:padding="0dp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
